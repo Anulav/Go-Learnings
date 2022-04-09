@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var array2 []int
-	array2 = []int{20, 20, 30, 40, 50}
+	var array2 [5]int
+	array2 = [5]int{20, 20, 30, 40, 50}
 	fmt.Println(array2)
-	array2 = []int{1: 10, 3: 30}
+	array2 = [5]int{1: 10, 3: 30}
 	fmt.Print(array2)
 
 	var array [4][2]int
@@ -29,7 +29,7 @@ func main() {
 	foo(&array2)
 }
 
-func foo(array *[]int) {
+func foo(array *[5]int) {
 	fmt.Println("Inside Foo")
 	fmt.Println(array)
 }
