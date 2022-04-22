@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//test3
 func main() {
 	var slices []int
 	var slices2 []string
